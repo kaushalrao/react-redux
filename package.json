@@ -8,6 +8,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "test": "yarn workspaces run test --watchAll=false"
+  },
   "devDependencies": {
     "eslint": "^8.51.0",
     "husky": "^8.0.3",
@@ -29,5 +32,8 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "yarn": "^1.22.19"
   }
 }
